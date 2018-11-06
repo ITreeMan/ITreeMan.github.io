@@ -213,11 +213,11 @@ var infoBox_ratingType = 'star-rating';
 
       markerCluster = new MarkerClusterer(map, allMarkers, options);
 
-      // google.maps.event.addDomListener(window, "resize", function() {
-      //     var center = map.getCenter();
-      //     google.maps.event.trigger(map, "resize");
-      //     map.setCenter(center);
-      // });
+      google.maps.event.addDomListener(window, "resize", function() {
+          var center = map.getCenter();
+          google.maps.event.trigger(map, "resize");
+          map.setCenter(center);
+      });
 
 
 
@@ -300,9 +300,9 @@ var infoBox_ratingType = 'star-rating';
 
     // Map Init
     var map =  document.getElementById('map');
-    // if (typeof(map) != 'undefined' && map != null) {
-    //   google.maps.event.addDomListener(window, 'load',  mainMap);
-    // }
+    if (typeof(map) != 'undefined' && map != null) {
+      google.maps.event.addDomListener(window, 'load',  mainMap);
+    }
 
 
     // ---------------- Main Map / End ---------------- //
@@ -386,9 +386,9 @@ var infoBox_ratingType = 'star-rating';
 
     // Single Listing Map Init
     var single_map =  document.getElementById('singleListingMap');
-    // if (typeof(single_map) != 'undefined' && single_map != null) {
-    //   google.maps.event.addDomListener(window, 'load',  singleListingMap);
-    // }
+    if (typeof(single_map) != 'undefined' && single_map != null) {
+      google.maps.event.addDomListener(window, 'load',  singleListingMap);
+    }
 
     // -------------- Single Listing Map / End -------------- //
 
