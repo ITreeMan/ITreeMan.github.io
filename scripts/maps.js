@@ -213,11 +213,11 @@ var infoBox_ratingType = 'star-rating';
 
       markerCluster = new MarkerClusterer(map, allMarkers, options);
 
-      google.maps.event.addDomListener(window, "resize", function() {
-          var center = map.getCenter();
-          google.maps.event.trigger(map, "resize");
-          map.setCenter(center);
-      });
+      // google.maps.event.addDomListener(window, "resize", function() {
+      //     var center = map.getCenter();
+      //     google.maps.event.trigger(map, "resize");
+      //     map.setCenter(center);
+      // });
 
 
 
