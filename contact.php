@@ -8,7 +8,7 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 // Enter the $email $address that you want to emails to be sent to.
 // Example $address = "joe.doe@yourdomain.com";
 
-$address = "mail@example.com";
+$address = "p_anusorn@kkumail.com";
 
 ///////////////////////////////////////////////////////////////////////////
 //
