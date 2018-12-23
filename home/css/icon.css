@@ -1,9 +1,14 @@
+#body {
+    margin:0 auto;
+}
+
+
 .wrapper {
     position: absolute;
     top: 65%;
-    left: 58%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 550px;
+    width: 225px;
   }
   
   /* Style the Un-order list by setting its list-style to none */
