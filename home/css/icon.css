@@ -4,8 +4,8 @@
 
 
 .wrapper {
-    position: absolute;
-    top: 65%;
+    position: relative;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 225px;
@@ -27,7 +27,7 @@
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
-    border: 5px solid #D8E2DC;
+    border: 5px solid white;
     float: left;
     transition: all 0.5s ease;
   }
@@ -35,7 +35,7 @@
   /* Style the icons by setting its color and margin-top value to 20px 
   to align it properly */
   .wrapper ul li .fa {
-    color: #D8E2DC;
+    color: white;
     margin-top: 8.5px;
     transition: all 0.5s ease;
   }
@@ -112,7 +112,7 @@
   
   @media screen and (max-width: 640px){
     .wrapper {
-        width: 350px;
+        width: 225px;
     }
     .wrapper ul li{
         margin-top: 10px;
