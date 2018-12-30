@@ -142,11 +142,11 @@
 							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-heading" role="tab" id="headingOne" onclick="changeImage()" value="Change" >
 										<h4 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
 											 aria-controls="collapseOne">
-												www.bemoregift.com  &nbsp;( ได้รับทุน 1 แสนบาทในการจัดทำ )
+												www.bemoregift.com  &nbsp; ( ได้รับทุน 1 แสนบาทในการพัฒนา )
 											</a>
 										</h4>
 									</div>
@@ -157,6 +157,12 @@
 										</div>
 									</div>
 								</div>
+
+
+
+
+
+
 
 								<div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingTwo">
@@ -198,7 +204,7 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<img src="images/section-image-1.png" alt="">
+							<img src="images/section-image-1.png" id="myImage"  alt="" >
 							<div class="space"></div>
 						</div>
 					</div>
@@ -1149,6 +1155,20 @@
 
 	<!-- Custom Scripts -->
 	<script type="text/javascript" src="js/custom.js"></script>
+
+
+
+	<script>
+			function changeImage() {
+				var image = document.getElementById('myImage');
+				if (image.src.match("images/section-image-2.png")) {
+					image.src = "images/section-image-1.png";
+				}
+				else {
+					image.src = "images/section-image-2.png";
+				}
+			}
+	</script>
 
 </body>
 
