@@ -139,12 +139,12 @@
 							<p>&nbsp;&nbsp; &nbsp; สวัสดีครับ ผมชื่อนายอนุสรณ์ แปลกจังหรีด เรียนวิศวกรรมคอมพิวเตอร์ ชั้นปีที่ 3 ที่มหาวิทยาลัยขอนแก่น ชอบความท้าทาย อยากจะเรียนรู้สิ่งใหม่ๆ 
 								ไม่ว่าจะเป็นทางสาย Programming , Design Art รวมไปถึงด้านเศรษฐศาสตร์ และการเงิน ตอนนี้กำลังศึกษาทางด้าน Smart Contact , Blockchain , React Native 
 								และ Data Analysis </p>
-							<p>&nbsp;&nbsp; &nbsp; มีประสบการณ์ทางด้าน Web Applications , Mobile application , IoT และ Smart contract   นอกจากนี้ยังมีประสบการณ์ด้าน Graphic design 
+							<p>&nbsp;&nbsp; &nbsp; มีประสบการณ์ทางด้าน Web Applications , Mobile applications , IoT และ Smart contract   นอกจากนี้ยังมีประสบการณ์ด้าน Graphic design 
 								, Video Editor , Animation และ VFX ปัจจุบันกำลังดูแลโปรเจคดังนี้ </p>
 							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne" onclick="changeImage()" value="Change" >
+									<div class="panel-heading" role="tab" id="headingOne" onclick="changeImageOne()" value="Change" >
 										<h4 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
 											 aria-controls="collapseOne">
@@ -154,38 +154,35 @@
 									</div>
 									<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 										<div class="panel-body">
-												&nbsp;&nbsp; &nbsp; bemoregift.com เป็นโครงการรวบรวมร้านขายของฝากในภาคอีสานตอนบน เพื่อสนับสนุนการท่องเที่ยว นวัตกรรม และสินค้าประจำท้องถิ่นต่างๆ ซึ่งได้รับทุนจาก 
-												<a href=https://www.innohubkku.com/ target="_blank" > <B> "Innovation Hub KKU"</B></a> จำนวน 100,000 บาท เพื่อพัฒนาระบบ
+												&nbsp;&nbsp; &nbsp; bemoregift.com เป็นโครงการรวบรวมร้านขายของฝากในภาคอีสานตอนบน เพื่อสนับสนุนการท่องเที่ยว นวัตกรรม 
+												และสินค้าประจำท้องถิ่นต่างๆ ซึ่งได้รับทุนจาก <a href=https://www.innohubkku.com/ target="_blank" > 
+												<B> "Innovation Hub KKU"</B></a> จำนวน 100,000 บาท เพื่อพัฒนาระบบ
 										</div>
 									</div>
 								</div>
 
 
 
-
-
-
-
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingTwo">
+									<div class="panel-heading" role="tab" id="headingTwo" onclick="changeImageTwo()" value="Change">
 										<h4 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
 											 aria-controls="collapseTwo">
-												Collapsible Group Item #2
+											  IoT Hydro-Organics ( พัฒนาไฮโดรโปรนิกส์โดยปลอดสารเคมี 100% )
 											</a>
 										</h4>
 									</div>
 									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 										<div class="panel-body">
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-											officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-											wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-											Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+											&nbsp;&nbsp; &nbsp; พัฒนาระบบไฮโดรโปนิกส์ให้มีประสิทธิภาพสูงขึ้นโดยใช้ IoT ในการดูแลแบบอัตโนมัติ สามารถควบคุมผ่าน Mobile Applications 
+											และต้องการยกระดับให้ระบบไฮโดรโปนิกส์กลายเป็นระบบไฮโดรออแกนิกส์ (ปลอดสารเคมี 100%)
 										</div>
 									</div>
 								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingThree">
+
+
+								<!-- <div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingThree" onclick="changeImageThree()" value="Change">
 										<h4 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
 											 aria-controls="collapseThree">
@@ -202,9 +199,13 @@
 											denim aesthetic.
 										</div>
 									</div>
-								</div>
+								</div> -->
+
 							</div>
+
+
 						</div>
+
 						<div class="col-md-6" id = "picShow">
 							<img src="images/section-image-1.png" id="myImage"  alt="" >
 							<div class="space"></div>
@@ -1161,7 +1162,27 @@
 
 
 	<script>
-			function changeImage() {
+			function changeImageOne() {
+				var image = document.getElementById('myImage');
+				if (image.src.match("images/section-image-2.png")) {
+					image.src = "images/section-image-1.png";
+				}
+				else {
+					image.src = "images/section-image-2.png";
+				}
+			}
+
+			function changeImageTwo() {
+				var image = document.getElementById('myImage');
+				if (image.src.match("images/section-image-3.png")) {
+					image.src = "images/section-image-1.png";
+				}
+				else {
+					image.src = "images/section-image-3.png";
+				}
+			}
+
+			function changeImageThree() {
 				var image = document.getElementById('myImage');
 				if (image.src.match("images/section-image-2.png")) {
 					image.src = "images/section-image-1.png";
