@@ -618,8 +618,8 @@ textarea {
 .social-links li.facebook a:hover {
 	color: #3b5998;
 }
-.social-links li.pinterest a:hover {
-	color: #cb2027;
+.social-links li.blue a:hover {
+	color: #55acee;
 }
 
 /* Isotope Items
@@ -801,3 +801,11 @@ textarea {
 }
 
 
+
+
+
+/*  Slide port */
+
+
+.mySlides {display:none;}
+.mySlidesOne {display:none;}

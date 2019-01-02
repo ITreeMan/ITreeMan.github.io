@@ -52,3 +52,45 @@ function changeImageThree() {
         image.src = "images/section-image-2.png";
     }
 }
+
+
+
+
+
+// Slide port 1 
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+// Slide port 2 
+var slideIndexOne = 1;
+showDivsOne(slideIndexOne);
+
+function plusDivsOne(n) {
+  showDivsOne(slideIndexOne += n);
+}
+
+function showDivsOne(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlidesOne");
+  if (n > x.length) {slideIndexOne = 1}
+  if (n < 1) {slideIndexOne = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndexOne-1].style.display = "block";  
+}
