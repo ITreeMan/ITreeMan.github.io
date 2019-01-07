@@ -94,3 +94,23 @@ function showDivsOne(n) {
   }
   x[slideIndexOne-1].style.display = "block";  
 }
+
+// Slide port 3 
+var slideIndexTwo = 1;
+showDivsTwo(slideIndexTwo);
+
+function plusDivsTwo(n) {
+  showDivsTwo(slideIndexTwo += n);
+}
+
+function showDivsTwo(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlidesTwo");
+  if (n > x.length) {slideIndexTwo = 1}
+  if (n < 1) {slideIndexTwo = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndexTwo-1].style.display = "block";  
+}
+
