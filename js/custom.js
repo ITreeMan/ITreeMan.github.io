@@ -25,31 +25,31 @@ jQuery(document).ready(function(){
 
 function changeImageOne() {
     var image = document.getElementById('myImage');
-    if (image.src.match("images/section-image-2.png")) {
-        image.src = "images/section-image-1.png";
+    if (image.src.match("images/section-image-2.jpg")) {
+        image.src = "images/section-image-1.jpg";
     }
     else {
-        image.src = "images/section-image-2.png";
+        image.src = "images/section-image-2.jpg";
     }
 }
 
 function changeImageTwo() {
     var image = document.getElementById('myImage');
-    if (image.src.match("images/section-image-3.png")) {
-        image.src = "images/section-image-1.png";
+    if (image.src.match("images/section-image-3.jpg")) {
+        image.src = "images/section-image-1.jpg";
     }
     else {
-        image.src = "images/section-image-3.png";
+        image.src = "images/section-image-3.jpg";
     }
 }
 
 function changeImageThree() {
     var image = document.getElementById('myImage');
-    if (image.src.match("images/section-image-2.png")) {
-        image.src = "images/section-image-1.png";
+    if (image.src.match("images/section-image-2.jpg")) {
+        image.src = "images/section-image-1.jpg";
     }
     else {
-        image.src = "images/section-image-2.png";
+        image.src = "images/section-image-2.jpg";
     }
 }
 
