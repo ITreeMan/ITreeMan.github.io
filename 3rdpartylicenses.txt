@@ -72,6 +72,9 @@ MIT
 @angular/router
 MIT
 
+@angular/service-worker
+MIT
+
 angular-gauge-chart
 
 gauge-chart
