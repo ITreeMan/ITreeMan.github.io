@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1565242032845,
+  "timestamp": 1565243585021,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -68,21 +68,21 @@
     }
   ],
   "hashTable": {
-    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/icons/icon-128x128.png": "6a4a1f7259d8493330acc7f497d4a3f84587b396",
+    "/assets/icons/icon-144x144.png": "474a1e0e4cbb8c67eaf887f9fdbba5960b52cc14",
+    "/assets/icons/icon-152x152.png": "fb4344739c36322cd6b3b5a1c005aceb6719be30",
+    "/assets/icons/icon-192x192.png": "73a19bd48df8d33893f392e8f2c2fb248352e269",
+    "/assets/icons/icon-384x384.png": "e5a919cfcb06bfa2dc23dadada3009b5a828b37a",
+    "/assets/icons/icon-512x512.png": "6fa4fa0643be9b4dc98db7d91aad3bb2794c067d",
+    "/assets/icons/icon-72x72.png": "4a4ad34e69a136cfc46e9b186bc068f6ba2507f1",
+    "/assets/icons/icon-96x96.png": "8eeac7def5d164a89d1395eab7d3ec2a98fecf62",
     "/assets/img-app/logo.png": "52e91427d846b72ab3b3aa70389cc4f10c6679f0",
     "/assets/img-app/rotaty-btn.png": "a9a987882dc0844a783280947a1993c862c98dc5",
     "/assets/img-app/slide.jpg": "de67f8499ba625014b41aa1dc043da195104a24f",
     "/assets/img-app/test.jpg": "f240a3563b414587056055c9466fac140e1feb72",
     "/assets/img-app/test1.jpg": "49f3b0f24d75b840026fb9726aee073931ff7773",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "ded56096ad06deb61504ea7b00e8d3d5124f33c4",
+    "/index.html": "a1001bf1fe590dcddac907c52e0e78be6317a56e",
     "/main-es2015.6a46ae651b42fbd8d4a5.js": "f86cf7d2be81f05cdebab24454e2ab1168c1b87c",
     "/main-es5.e2dbd1aa36327692d2e7.js": "19872583ae8ea4cdf200781bd48ee814fae2cc02",
     "/polyfills-es2015.27661dfa98f6332c27dc.js": "77f974dd2b186031cfc4f4526d96db4efcd39353",
