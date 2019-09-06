@@ -1,0 +1,62 @@
+version: '3.1'
+services:
+  nginx:
+    image: nginx:1.13.12-alpine
+    container_name: nginx
+    ports:
+      - "8080:80"
+      - "443:443"
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d/
+      - ./www/example.com/:/usr/share/nginx/html
+      - ./etc/letsencrypt/live/absolutecarrentalphuket.com/fullchain.pem:/etc/letsencrypt/live/absolutecarrentalphuket.com/fullchain.pem
+      - ./etc/letsencrypt/live/absolutecarrentalphuket.com/privkey.pem:/etc/letsencrypt/live/absolutecarrentalphuket.com/privkey.pem
+      - ./etc/letsencrypt/dh-param/dhparam-2048.pem:/etc/ssl/certs/dhparam-2048.pem
+    depends_on:
+      - nodejs
+      - mysql
+  nodejs:
+    image: node:9.11.1-alpine
+    container_name: nodejs
+    working_dir: /home/app/nodejs
+    volumes:
+      - ./nodejs/wanaburi:/home/app/nodejs
+    ports:
+      - "3000:3000"
+    command: "npm start"
+  server:
+    image: node:9.11.1-alpine
+    container_name: servernode
+    working_dir: /home/app/serverjs
+    volumes:
+      - ./nodejs/serverjs:/home/app/serverjs
+    ports:
+      - "5000:5000"
+    command: "npm start"
+  service:
+    image: node:9.11.1-alpine
+    container_name: servicejs
+    working_dir: /home/app/servicejs
+    volumes:
+      - ./nodejs/servicejs:/home/app/servicejs
+    ports:
+      - "3307:3307"
+    command: "npm start"
+  mysql:
+    image: mysql
+    restart: always
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: isylzjkoot
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      PMA_ARBITRARY: 1
+    ports:
+      - "8080:80"
