@@ -1,12 +1,12 @@
 version: '2'
 
 services:
-    EAC:
+    website:
         build:
             context: .
         command: yarn dev
         ports:
-            - 3000:3000
+            - 8888:80
         volumes:
             - .:/usr/src/app
             
